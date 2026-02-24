@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KodNest Premium Build System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /w>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="top-bar" role="banner">
+      <div class="project-name">KodNest Premium Build System</div>
+      <div class="progress-indicator">Step <span id="current-step">1</span> / <span id="total-steps">4</span></div>
+      <div class="status-badge" id="status-badge" data-status="not-started">Not Started</div>
+    </header>
+
+    <section class="context-header" aria-labelledby="context-title">
+      <h1 id="context-title">Build with confidence, one verified step at a time.</h1>
+      <p>Use this interface to establish a disciplined build flow before product logic begins.</p>
+    </section>
+
+    <main class="main-layout" role="main">
+      <section class="primary-workspace" aria-label="Primary Workspace">
+        <article class="card">
+          <h2>Core Interface Language</h2>
+          <p class="measure">Typography, controls, and spacing are intentionally restrained so every screen feels coherent and dependable.</p>
+          <div class="button-row">
+            <button class="btn btn-primary" type="button">Primary Action</button>
+            <button class="btn btn-secondary" type="button">Secondary Action</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Input Standards</h2>
+          <div class="field-grid">
+            <label class="field">
+              <span>Build Name</span>
+              <input type="text" placeholder="Quarterly Release Foundation" />
+            </label>
+            <label class="field">
+              <span>Owner</span>
+              <input type="text" placeholder="Product Team" />
+            </label>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>System States</h2>
+          <div class="state-row">
+            <div class="state state-empty">
+              <h3>Empty State</h3>
+              <p>No evidence has been attached yet. Add proof to continue to shipment readiness.</p>
+              <button class="btn btn-secondary" type="button">Add First Proof</button>
+            </div>
+            <div class="state state-error" role="alert">
+              <h3>Error State</h3>
+              <p>Build validation is incomplete. Attach test output and rerun checks to proceed.</p>
+              <button class="btn btn-secondary" type="button">Review Fix Steps</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <aside class="secondary-panel" aria-label="Secondary Panel">
+        <section class="card side-card">
+          <h2>Step Guidance</h2>
+          <p>Prepare a clear prompt, execute the build, then attach proof before marking completion.</p>
+        </section>
+
+        <section class="card side-card">
+          <h2>Prompt</h2>
+          <label class="field">
+            <span>Copyable Prompt</span>
+            <textarea id="prompt-box" rows="6">Build KodNest Premium Build System with the defined top bar, context header, two-column workspace, and proof footer using the established design tokens.</textarea>
+          </label>
+          <div class="panel-actions">
+            <button class="btn btn-primary" id="copy-btn" type="button">Copy</button>
+            <button class="btn btn-secondary" type="button">Build in Lovable</button>
+            <button class="btn btn-secondary" id="worked-btn" type="button">It Worked</button>
+            <button class="btn btn-secondary" id="error-btn" type="button">Error</button>
+            <button class="btn btn-secondary" type="button">Add Screenshot</button>
+          </div>
+          <p class="feedback" id="copy-feedback" aria-live="polite"></p>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <footer class="proof-footer" aria-label="Proof Footer">
+    <h2>Proof Checklist</h2>
+    <div class="proof-grid">
+      <label class="proof-item">
+        <input class="proof-check" type="checkbox" disabled />
+        <span>UI Built</span>
+        <input class="proof-input" type="text" placeholder="Attach link or note" />
+      </label>
+      <label class="proof-item">
+        <input class="proof-check" type="checkbox" disabled />
+        <span>Logic Working</span>
+        <input class="proof-input" type="text" placeholder="Attach output evidence" />
+      </label>
+      <label class="proof-item">
+        <input class="proof-check" type="checkbox" disabled />
+        <span>Test Passed</span>
+        <input class="proof-input" type="text" placeholder="Attach test result" />
+      </label>
+      <label class="proof-item">
+        <input class="proof-check" type="checkbox" disabled />
+        <span>Deployed</span>
+        <input class="proof-input" type="text" placeholder="Attach deployment proof" />
+      </label>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
